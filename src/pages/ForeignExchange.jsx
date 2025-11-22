@@ -18,11 +18,9 @@ export default function ForeignExchange() {
 
   //  fetch from API
   const fetchDataFromWso2 = async () => {
-    // <<<<<<< HEAD:src/ForeignExchange.jsx
-    //     const url = "https://forex.anbesabank.et/api/daily";
-    // =======
+  
     // const url = "https://forex.anbesabank.et/api/daily";
-    const url = "https://api-in-uat.anbesabank.et/api/forex/1.0.0/rates";
+    const url = "https://api-esb.anbesabank.et/api/forex/1.0.0/rates";
     try {
       const response = await axios.get(url);
       if (response.data && response.data.length > 0) {
